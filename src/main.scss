@@ -1,0 +1,40 @@
+$primary-color: #00D8FF;
+$secondary-color: #2d465f;
+$tertiary-color: #42702F;
+$primary-text-color: #1d1f21;
+$secondary-text-color: #96cbfe;
+$tertiary-text-color: #696870;
+$background-color:#26282B;
+$font-stack: 'Roboto', sans-serif;
+$tx-sm: 1.2rem;
+$tx-base: 1.4rem;
+$tx-l: 1.6rem;
+$tx-xl: 1.8rem;
+$tx-xxl: 2rem;
+$bg-linearGrad:linear-gradient(225deg, #cacaca, #f0f0f0);
+$bg-linearSmGrad:linear-gradient(225deg, #f0f0f0, #cacaca);
+$shad-Flat:-20px 20px 60px #bebebe,
+20px -20px 60px #ffffff;
+$shad-smFlat: -5px 5px 10px #bebebe,
+5px -5px 10px #ffffff;
+$shadow: -5px 5px 10px #bebebe;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+    font-size: 62.5%;
+  }
+
+body {
+  background: $background-color;
+  color: $primary-text-color;
+  font-family: $font-stack;
+  svg path {
+    stroke: currentColor;        
+  }
+}
