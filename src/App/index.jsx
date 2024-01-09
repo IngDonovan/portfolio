@@ -10,7 +10,10 @@ function App() {
   return (
     <>
       <PortProvider>
-        <AppUI />
+        <div className='container'>
+          <img src={reactLogo} className="logo" alt="React logo" />
+          <AppUI />
+        </div>
       </PortProvider>
     </>
   )
