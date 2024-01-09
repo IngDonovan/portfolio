@@ -1,0 +1,8 @@
+@use '../../index' as mn;
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: mn.$primary-color;
+}
