@@ -1,9 +1,11 @@
 @use '../../main.scss' as mn;
 
 .layout {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 7vh;
     color: mn.$primary-color;
+    z-index: 2;
 }
