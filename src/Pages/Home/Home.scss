@@ -6,10 +6,26 @@
     justify-content: center;
     article{
         width: 50vw;
+        padding-left: 7vw;
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         flex-direction: column;
+        gap: 1vw;
+        p{
+            font-size: mn.$tx-l;
+            color: mn.$primary-text-color;
+        }
+        @media (min-width: mn.$layout-breakpoint-small){
+            p{
+                font-size: mn.$tx-xxxl;
+            }
+        }
+        @media (min-width: mn.$layout-breakpoint-medium){
+            p{
+                font-size: mn.$tx-desktop;
+            }
+        }
     }
     figure{
         width: 50vw;
@@ -24,16 +40,14 @@
             background-color: transparent;
             background-size: cover;
             background-position: center;
+
         }
-        img{
-            width: 30vw;
-            height: 30vw;
-            border-radius: 50%;
-            background-image: url(../../assets/img/drm.png);
-            background-color: transparent;
-            background-size: 100% 100%;
-            object-fit: contain;
-            box-shadow:mn.$shad-Flat;
-        }
+
+    }
+}
+.ing{
+    font-size: mn.$tx-xxl;
+    span{
+        color: mn.$primary-text-color;
     }
 }

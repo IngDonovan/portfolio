@@ -11,8 +11,8 @@ const Home = () => {
       <Layout>
         <section className="info">
             <article>
-                <p>I´m</p>
-                <h1>Donovan Rojas</h1>
+                <p>I'm</p>
+                <h1 className="ing">Donovan <span>Rojas</span></h1>
                 <p>Frontend Developer</p>
             </article>
             <figure>
