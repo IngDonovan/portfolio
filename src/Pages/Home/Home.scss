@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     article{
-        width: 50vw;
-        padding-left: 7vw;
+        width: 45vw;
+        // padding-left: 5vw;
         display: flex;
         align-items: start;
         justify-content: center;
@@ -28,11 +28,12 @@
         }
     }
     figure{
-        width: 50vw;
+        width: 45vw;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         span{
+            
             width: 30vw;
             height: 30vw;
             border-radius: 50%;

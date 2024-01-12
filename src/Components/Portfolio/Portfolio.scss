@@ -1,25 +1,24 @@
 @use '../../main.scss' as mn;
     
 .proyContainer{
-    width: calc(100% - 14vw);
-    margin: 20px 7vw;
-    // padding: 24px;
+    // margin: 0px 5vw;
     display: flex;
     flex-direction: column;
-    gap: 5vw;
-    background: mn.$background-color;
-    opacity: 70%;
+    // gap: 5vw;
+    background: mn.$background2;
     border: 1px solid mn.$border-color;
     border-radius: 12px;
+    box-shadow: mn.$shad-Flat;
+    
+    h2{
+        padding: 5vw 0 0 5vw;
+    }
     
     aside {
-        width: 100%;
+        width: 89vw;
+        padding: 5vw;
         display: flex;
-        flex: none;
         align-items: center;
-        justify-content: center;
-        margin: 24px;
-        padding: 5px;
         gap: 5vw;
         overflow-x: auto;
     }

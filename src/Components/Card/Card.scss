@@ -1,8 +1,9 @@
 @use '../../main.scss' as mn;
 
 .cardContainer{
-    width: 135px;
-    height: 135px;
+    width: 120px;
+    min-width: max-content;
+    height: 120px;
     display: flex;
     position: relative;
     color: mn.$primary-text-color;
