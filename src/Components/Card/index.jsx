@@ -4,7 +4,7 @@ import { PortContext } from "../../Context";
 const Card = ({ data }) => {
 
  return(
-    <a className="cardProyContainer" href={data.linkPage}>
+    <a className="cardContainer" href={data.linkPage}>
         <figure>
          <img src="" alt="" />
         </figure>
