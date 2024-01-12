@@ -3,7 +3,7 @@
 .proyContainer{
     width: calc(100% - 14vw);
     margin: 20px 7vw;
-    padding: 24px;
+    // padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 5vw;
@@ -11,8 +11,16 @@
     opacity: 70%;
     border: 1px solid mn.$border-color;
     border-radius: 12px;
+    
     aside {
+        width: 100%;
         display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        margin: 24px;
+        padding: 5px;
         gap: 5vw;
+        overflow-x: auto;
     }
     }
