@@ -1,0 +1,18 @@
+@use '../../main.scss' as mn;
+    
+.proyContainer{
+    width: calc(100% - 14vw);
+    margin: 20px 7vw;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    background: mn.$background-color;
+    opacity: 70%;
+    border: 1px solid mn.$border-color;
+    border-radius: 12px;
+    aside {
+        display: flex;
+        gap: 5vw;
+    }
+    }

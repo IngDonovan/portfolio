@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { PortContext } from "../../Context";
 import Card from "../Card";
-import "./Portfolio.sass";
+import "./Portfolio.scss";
 
 const Portfolio = () => {
 
@@ -18,6 +18,7 @@ const Portfolio = () => {
 
     return (
         <section className="proyContainer">
+            <h2>Last Proyects</h2>
             <aside>
                 {renderView()}
             </aside>
