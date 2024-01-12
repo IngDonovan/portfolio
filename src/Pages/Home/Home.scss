@@ -50,4 +50,11 @@
     span{
         color: mn.$primary-text-color;
     }
+    @media (min-width: mn.$layout-breakpoint-small){
+        font-size: mn.$tx-xxxl;
+
+    }
+    @media (min-width: mn.$layout-breakpoint-medium){
+        font-size: mn.$tx-desktop;
+    }
 }

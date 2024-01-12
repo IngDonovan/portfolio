@@ -3,10 +3,29 @@ import { createContext, useState, useEffect } from "react";
 const PortContext = createContext();
 
 const PortProvider = ({ children }) => {
+  
+  const listProyects = [
+    {
+      id:1,
+      title:'E-Commerce',
+      image:'',
+      dev:['ViteJs','React','Sass'],
+      linkPage:'https://ingdonovan.github.io/e-commerce-react-sass/',
+      linkCode:'https://github.com/IngDonovan/e-commerce-react-sass',
+    },
+    {
+      id:2,
+      title:'E-Commerce',
+      dev:['ViteJs','React','Sass'],
+      linkPage:'https://ingdonovan.github.io/e-commerce-react-sass/',
+      linkCode:'https://github.com/IngDonovan/e-commerce-react-sass',
+    },
+  ];
+  
   return (
     <PortContext.Provider
      value={{
-
+      listProyects,
      }}
     >
         {children}
