@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { PortContext } from "../../Context";
 import Layout from "../../Components/Layout";
+import Portfolio from "../../Components/Portfolio";
 import drmPhoto from '../../assets/img/drm.png';
 import './Home.scss';
 
@@ -19,6 +20,7 @@ const Home = () => {
                 <span></span>
             </figure>
         </section>
+        <Portfolio />
       </Layout>
     );
   };

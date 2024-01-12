@@ -8,18 +8,19 @@ const PortProvider = ({ children }) => {
     {
       id:1,
       title:'E-Commerce',
-      image:'',
+      image:'/Ecommerce.png',
       dev:['ViteJs','React','Sass'],
       linkPage:'https://ingdonovan.github.io/e-commerce-react-sass/',
       linkCode:'https://github.com/IngDonovan/e-commerce-react-sass',
     },
-    {
-      id:2,
-      title:'E-Commerce',
-      dev:['ViteJs','React','Sass'],
-      linkPage:'https://ingdonovan.github.io/e-commerce-react-sass/',
-      linkCode:'https://github.com/IngDonovan/e-commerce-react-sass',
-    },
+    // {
+    //   id:2,
+    //   title:'E-Commerce',
+    //   image:'/Ecommerce.png',
+    //   dev:['ViteJs','React','Sass'],
+    //   linkPage:'https://ingdonovan.github.io/e-commerce-react-sass/',
+    //   linkCode:'https://github.com/IngDonovan/e-commerce-react-sass',
+    // },
   ];
   
   return (
