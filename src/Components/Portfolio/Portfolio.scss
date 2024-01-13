@@ -1,7 +1,7 @@
 @use '../../main.scss' as mn;
     
 .proyContainer{
-    // margin: 0px 5vw;
+    padding: 0px 0px 5vw 0px;
     display: flex;
     flex-direction: column;
     // gap: 5vw;
@@ -21,5 +21,15 @@
         align-items: center;
         gap: 5vw;
         overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
     }
+    aside::-webkit-scrollbar {
+        background-color: mn.$border-color;
+        height: 3px;
+      }
+    aside::-webkit-scrollbar-thumb{
+        background-color: mn.$primary-color;
+      }
     }
+
