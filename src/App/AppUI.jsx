@@ -21,9 +21,9 @@ function AppUI() {
         <>
             <BrowserRouter>
                 <div className='container'>
-                    {/* <picture className="contentLogo">
+                    <picture className="contentLogo">
                         <img src={reactLogo} className="logo" alt="React logo" />
-                    </picture> */}
+                    </picture>
                     <Navbar />
                     <AppRoutes />
                 </div>
