@@ -10,6 +10,7 @@ const AppRoutes = () => {
    
     let routes = useRoutes ([
       {path: '/', element: <Home />},
+      {path: '/portfolio', element: <Home />},
       {path: '/*', element: <NotFound />},
     ]);
     return routes;
