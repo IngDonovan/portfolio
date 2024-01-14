@@ -5,8 +5,9 @@ import "./Card.scss";
 const Card = ({ data }) => {
    const iconosdev = data.dev;
    const icoDev = iconosdev.map((ico) => {
+      let cont = 0;
       return (
-         <img className="devIco" src={ico} alt='icono' />
+         <img className="devIco" src={ico} alt='icono' key={cont++}/>
       );
    });
 

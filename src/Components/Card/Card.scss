@@ -12,6 +12,11 @@
     border-radius: 12px;
     box-shadow: mn.$shad-Flat;
     cursor: pointer;
+    &:hover{
+        .hoverProy{
+            display: flex;
+        }
+    }
     img{
         object-fit: fill;
         // width:100%;
@@ -24,7 +29,7 @@
 .hoverProy{
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     position: absolute;
     flex-direction: column;
     align-items: center;
@@ -41,7 +46,9 @@
         align-items: center;
         gap: 3vh;
     }
+
 }
+
 
 .devIco {
     width: 30px;
