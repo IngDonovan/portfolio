@@ -3,14 +3,21 @@ import { PortContext } from "../../Context";
 import "./Card.scss";
 
 const Card = ({ data }) => {
+   const iconosdev = data.dev;
+   const icoDev = iconosdev.map((ico) => {
+      return (
+         <img className="devIco" src={ico} alt='icono' />
+      );
+   });
+
   return (
     <a className="cardContainer" href={data.linkPage}>
       <img src={data.image} alt={data.title} />
       <figure className="hoverProy">
         <span>
-          <h4>{data.title}</h4>
+          <p>{data.title}</p>
         </span>
-        <span>{data.dev}</span>
+        <span>{icoDev}</span>
       </figure>
     </a>
   );
