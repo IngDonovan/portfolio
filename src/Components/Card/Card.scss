@@ -2,7 +2,7 @@
 
 .cardContainer{
     width: 25vw;
-    height: 30vw;
+    height: 30vh;
     min-width: max-content;
     min-height: max-content;
     display: flex;
@@ -11,17 +11,16 @@
     font-size: mn.$tx-base;
     border-radius: 12px;
     box-shadow: mn.$shad-Flat;
-    
-}
-
-.photoProy{
+    cursor: pointer;
     img{
-        width: 100%;
-        height: 100%;
+        object-fit: fill;
+        width:100%;
+        height:100%;
         border-radius: 12px;
-        
+
     }
 }
+
 
 .hoverProy{
     width: 100%;

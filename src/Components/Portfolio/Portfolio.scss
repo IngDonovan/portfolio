@@ -26,10 +26,12 @@
     }
     aside::-webkit-scrollbar {
         background-color: mn.$border-color;
-        height: 3px;
+        height: 5px;
+        
       }
     aside::-webkit-scrollbar-thumb{
         background-color: mn.$primary-color;
+        border-radius: 5px;
       }
     }
 
