@@ -1,12 +1,14 @@
 @use '../../main.scss' as mn;
 
 .layout {
+    width: 100vw;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 7vh;
-    padding: 0 5vw;
+    // padding: 0 5vw;
     gap: 5vh;
     color: mn.$primary-color;
     z-index: 2;

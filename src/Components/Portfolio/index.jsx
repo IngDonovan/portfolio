@@ -18,7 +18,7 @@ const Portfolio = () => {
 
     return (
         <section className="proyContainer">
-            <h2>Last Projects</h2>
+            <h2>Last Projects:</h2>
             <aside>
                 {renderView()}
             </aside>

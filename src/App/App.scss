@@ -1,12 +1,14 @@
+@use '../main.scss' as mn;
+
 .container{
-    width: 100%;
+    width: 100vw;
     // height: auto;
 
 }
 .contentLogo{
       // overflow-x: hidden; 
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     // background: gray;
 }
@@ -19,6 +21,12 @@
     z-index: 0;
     will-change: filter;
     transition: filter 300ms;
+    // overflow-x: hidden;
+    @media (min-width: mn.$layout-breakpoint-medium){
+      width: 45vh;
+      top: 10vh;
+      left: 25vw; 
+  }
 }
 
 @keyframes logo-spin {

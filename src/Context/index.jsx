@@ -23,7 +23,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:3,
-      title:'Track Satellite Project',
+      title:'Satellite Tracker Project',
       image:'./img/Space-Track.png',
       dev:['./svg/vite.svg','./svg/vanilla.svg','./svg/sass.svg'],
       linkPage:'https://ingdonovan.github.io/space-track/',
@@ -31,7 +31,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:4,
-      title:'Travel Page with Tailwind',
+      title:'Travel with Tailwind',
       image:'./img/Travel-Tailwind.png',
       dev:['./svg/vite.svg','./svg/react.svg','./svg/Tailwind.svg'],
       linkPage:'https://ingdonovan.github.io/travel-tailwind/',
