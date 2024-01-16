@@ -22,14 +22,14 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 5vw;
+        gap: 7vw;
         
         @media (min-width: mn.$layout-breakpoint-small){
           flex-direction: row;
           overflow-x: auto;
           overscroll-behavior-x: contain;
           scroll-snap-type: x proximity;
-  
+          gap: 5vw;
         }
     }
     aside::-webkit-scrollbar {
