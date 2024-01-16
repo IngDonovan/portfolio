@@ -4,10 +4,10 @@ const PortContext = createContext();
 
 const PortProvider = ({ children }) => {
   
-  const listProyects = [
+  const listProjects = [
     {
       id:1,
-      title:'E-Commerce',
+      title:'E-Commerce Page',
       image:'./img/Ecommerce.png',
       dev:['./svg/vite.svg','./svg/react.svg','./svg/sass.svg'],
       linkPage:'https://ingdonovan.github.io/e-commerce-react-sass/',
@@ -15,7 +15,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:2,
-      title:'Broch-Page',
+      title:'Brochure Page',
       image:'./img/Broch-page.png',
       dev:['./svg/vite.svg','./svg/react.svg','./svg/sass.svg'],
       linkPage:'https://ingdonovan.github.io/broch-page/',
@@ -23,7 +23,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:3,
-      title:'Space-Track',
+      title:'Track Satellite Project',
       image:'./img/Space-Track.png',
       dev:['./svg/vite.svg','./svg/vanilla.svg','./svg/sass.svg'],
       linkPage:'https://ingdonovan.github.io/space-track/',
@@ -31,7 +31,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:4,
-      title:'Travel-Tailwind',
+      title:'Travel Page with Tailwind',
       image:'./img/Travel-Tailwind.png',
       dev:['./svg/vite.svg','./svg/react.svg','./svg/Tailwind.svg'],
       linkPage:'https://ingdonovan.github.io/travel-tailwind/',
@@ -39,7 +39,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:5,
-      title:'Todo-List',
+      title:'Todo Page',
       image:'./img/Todo.png',
       dev:['./svg/vite.svg','./svg/react.svg','./svg/Tailwind.svg'],
       linkPage:'https://ingdonovan.github.io/todo-viteReactSass/',
@@ -47,7 +47,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:6,
-      title:'Landing-Page',
+      title:'Landing Page',
       image:'./img/Landing-page.png',
       dev:['./svg/Html.svg','./svg/JS.svg','./svg/sass.svg'],
       linkPage:'https://ingdonovan.github.io/sass-landing-page/',
@@ -55,7 +55,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:7,
-      title:'Movies-Proyect',
+      title:'Movie Project',
       image:'./img/Movies-proyect.png',
       dev:['./svg/Html.svg','./svg/JS.svg','./svg/css.svg'],
       linkPage:'https://ingdonovan.github.io/movies-proyect/',
@@ -63,7 +63,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:8,
-      title:'CatAleaJs',
+      title:'Random Cat with Js',
       image:'./img/CataleaJS.png',
       dev:['./svg/Html.svg','./svg/JS.svg','./svg/css.svg'],
       linkPage:'https://ingdonovan.github.io/CatAleaJS/',
@@ -71,7 +71,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:9,
-      title:'Landing-Async',
+      title:'Async Landing Page',
       image:'./img/landing-async.png',
       dev:['./svg/Html.svg','./svg/JS.svg','./svg/css.svg'],
       linkPage:'https://ingdonovan.github.io/landing-async/',
@@ -87,7 +87,7 @@ const PortProvider = ({ children }) => {
     },
     {
       id:11,
-      title:'Batatabit',
+      title:'Proyect Batatabit',
       image:'./img/Batatabit.png',
       dev:['./svg/Html.svg','./svg/JS.svg','./svg/css.svg'],
       linkPage:'https://ingdonovan.github.io/ProyBatatabit/',
@@ -98,7 +98,7 @@ const PortProvider = ({ children }) => {
   return (
     <PortContext.Provider
      value={{
-      listProyects,
+      listProjects,
      }}
     >
         {children}

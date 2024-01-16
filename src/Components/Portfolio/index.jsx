@@ -6,19 +6,19 @@ import "./Portfolio.scss";
 const Portfolio = () => {
 
     const {
-        listProyects,
+        listProjects,
     } = useContext(PortContext);
 
     const renderView = () => {
         return (
-            listProyects.map((proyect) => 
-            <Card key={proyect.id} data={proyect} />)
+            listProjects.map((project) => 
+            <Card key={project.id} data={project} />)
         );
     };
 
     return (
         <section className="proyContainer">
-            <h2>Last Proyects</h2>
+            <h2>Last Projects</h2>
             <aside>
                 {renderView()}
             </aside>
