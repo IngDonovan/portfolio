@@ -10,4 +10,8 @@
     gap: 5vh;
     color: mn.$primary-color;
     z-index: 2;
+    @media (min-width: mn.$layout-breakpoint-small){
+        animation-duration: 4s;
+        animation-name: fade;
+    }
 }

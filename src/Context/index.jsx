@@ -77,6 +77,22 @@ const PortProvider = ({ children }) => {
       linkPage:'https://ingdonovan.github.io/landing-async/',
       linkCode:'https://github.com/IngDonovan/landing-async',
     },
+    {
+      id:10,
+      title:'VideoGame with JS',
+      image:'./img/videoGameJS.png',
+      dev:['./svg/Html.svg','./svg/JS.svg','./svg/css.svg'],
+      linkPage:'https://ingdonovan.github.io/VideoJuego-JS/',
+      linkCode:'https://github.com/IngDonovan/VideoJuego-JS',
+    },
+    {
+      id:11,
+      title:'Batatabit',
+      image:'./img/Batatabit.png',
+      dev:['./svg/Html.svg','./svg/JS.svg','./svg/css.svg'],
+      linkPage:'https://ingdonovan.github.io/ProyBatatabit/',
+      linkCode:'https://github.com/IngDonovan/ProyBatatabit',
+    },
   ];
   
   return (

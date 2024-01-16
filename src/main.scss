@@ -70,3 +70,12 @@ ul{
     background-color: #f9f9f9;
   }
 }
+
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
