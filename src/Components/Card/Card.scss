@@ -1,8 +1,8 @@
 @use '../../main.scss' as mn;
 
 .cardContainer{
-    width: 25vw;
-    height: 30vh;
+    width: 300px;
+    height: 300px;
     min-width: max-content;
     min-height: max-content;
     display: flex;
@@ -12,9 +12,17 @@
     border-radius: 12px;
     box-shadow: mn.$shad-Flat;
     cursor: pointer;
-    &:hover{
-        .hoverProy{
-            display: flex;
+    @media (min-width: mn.$layout-breakpoint-small){
+        width: 25vw;
+        height: 30vh;
+        min-width: max-content;
+        min-height: max-content;
+    }
+    @media (min-width: mn.$layout-breakpoint-medium){
+        &:hover{
+            .hoverProy{
+                display: flex;
+            }
         }
     }
     img{
@@ -29,14 +37,18 @@
 .hoverProy{
     width: 100%;
     height: 100%;
-    display: none;
+    display: flex;
     position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(65, 63, 63, 0.5);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     border-radius: 12px;
+    @media (min-width: mn.$layout-breakpoint-medium){
+        display: none;
+        backdrop-filter: blur(3px);
+    }
     span{
         font-size: mn.$tx-xl;
         font-weight: 300;

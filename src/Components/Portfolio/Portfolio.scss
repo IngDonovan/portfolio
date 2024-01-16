@@ -21,10 +21,16 @@
         padding: 5vw;
         display: flex;
         align-items: center;
+        flex-direction: column;
         gap: 5vw;
-        overflow-x: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x proximity;
+        
+        @media (min-width: mn.$layout-breakpoint-small){
+          flex-direction: row;
+          overflow-x: auto;
+          overscroll-behavior-x: contain;
+          scroll-snap-type: x proximity;
+  
+        }
     }
     aside::-webkit-scrollbar {
         background-color: mn.$border-color;
