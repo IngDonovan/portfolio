@@ -25,6 +25,20 @@ header{
                 color: mn.$primary-color;
             }
         }
+        .contain-menu{
+          justify-content: end;
+          @media (min-width: mn.$layout-breakpoint-small){
+            display: none;
+          }
+        }
+        .contain-list-menu{
+          display: none;
+          @media (min-width: mn.$layout-breakpoint-small){
+            display: flex;
+            max-width: 300px;
+            // cursor: pointer;
+          }
+        }
     }
 
 }

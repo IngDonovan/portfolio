@@ -3,6 +3,13 @@ import { createContext, useState, useEffect } from "react";
 const PortContext = createContext();
 
 const PortProvider = ({ children }) => {
+
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  const toggleMode = () => {
+    setIsLightMode(!isLightMode);
+    console.log(isLightMode);
+  };
   
   const listProjects = [
     {
@@ -98,6 +105,9 @@ const PortProvider = ({ children }) => {
   return (
     <PortContext.Provider
      value={{
+      isLightMode,
+      setIsLightMode,
+      toggleMode,
       listProjects,
      }}
     >
