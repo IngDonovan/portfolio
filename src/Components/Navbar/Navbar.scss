@@ -45,6 +45,9 @@ header{
     cursor: pointer;
     box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
     line-height: 1;
+    &:hover {
+      color: mn.$primary-color;
+    }
   }
   
   .input {
