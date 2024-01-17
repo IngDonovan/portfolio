@@ -26,6 +26,7 @@ function AppUI() {
                     <picture className="contentLogo">
                         <img src={reactLogo} className="logo" alt="React logo" />
                     </picture>
+
                     <Navbar />
                     <AppRoutes />
                 </div>

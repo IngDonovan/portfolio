@@ -9,11 +9,15 @@ header{
         position: absolute;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
         background: mn.$background2;
-        opacity: 70%;
+        // opacity: 70%;
         box-shadow: mn.$shad-Flat;
         ul{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             li {
                 cursor: pointer;
             }
@@ -29,3 +33,44 @@ header{
     width: 33px;
     height: 33px;
 }
+
+.toggle {
+    color: mn.$primary-text-color;
+    background-color: mn.$background-color;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+    line-height: 1;
+  }
+  
+  .input {
+    display: none;
+  }
+  
+  .icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+  }
+  
+  .icon--moon {
+    transition-delay: 200ms;
+  }
+  
+  .icon--sun {
+    transform: scale(0);
+  }
+  
+  #switch:checked + .icon--moon {
+    transform: rotate(360deg) scale(0);
+
+  }
+  
+  #switch:checked ~ .icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
+  }
