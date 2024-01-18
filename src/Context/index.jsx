@@ -5,9 +5,18 @@ const PortContext = createContext();
 const PortProvider = ({ children }) => {
 
   const [isLightMode, setIsLightMode] = useState(false);
-
-  const toggleMode = () => {
-    setIsLightMode(!isLightMode);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const clickLightMode = () => {
+    setIsLightMode(true);
+    setIsDarkMode(false);
+    console.log("ligh",isLightMode);
+    console.log("Dark",isDarkMode);
+  };
+  const clickDarkMode = () => {
+    setIsDarkMode(true);
+    setIsLightMode(false);
+    console.log("Dark",isDarkMode);
+    console.log("ligh",isLightMode);
   };
 
    //menu mobile open/close
@@ -109,8 +118,9 @@ const PortProvider = ({ children }) => {
     <PortContext.Provider
      value={{
       isLightMode,
-      setIsLightMode,
-      toggleMode,
+      isDarkMode,
+      clickLightMode,
+      clickDarkMode,
       listProjects,
       isMenuMbOpen,
       setIsMenuMbOpen,

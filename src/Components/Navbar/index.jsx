@@ -8,9 +8,10 @@ import "./Navbar.scss";
 
 const Navbar = () => {
     const {
-        toggleMode,
         isMenuMbOpen,
         toggleMenuMb,
+        clickLightMode,
+        clickDarkMode,
      } = useContext(PortContext) 
 
 
@@ -21,7 +22,7 @@ const Navbar = () => {
           <li className="containerToggle" >
             <label className="toggle" htmlFor="switch">
               <input id="switch" className="input" type="checkbox" />
-              <div className="icon icon--moon" onClick={toggleMode}>
+              <div className="icon icon--moon" onClick={clickDarkMode} >
                 <svg
                   height="25"
                   width="25"
@@ -36,7 +37,7 @@ const Navbar = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="icon icon--sun">
+              <div className="icon icon--sun" onClick={clickLightMode}>
                 <svg
                   height="25"
                   width="25"
@@ -56,8 +57,16 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className="contain-list-menu">
-          <li>About Me</li>
-          <li>Contact</li>
+          <li>
+            <NavLink to="/about-me" className="linkClass">
+              About Me
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className="linkClass">
+              Contact
+            </NavLink>
+          </li>
           <li>
             <a href="https://www.linkedin.com/in/ingdonovanrm/">
               <FaLinkedin className="icoSocial"/>
