@@ -18,6 +18,7 @@ const Card = ({ data }) => {
         <span>
           <p>{data.title}</p>
         </span>
+        <span >Developed with:</span>
         <span>{icoDev}</span>
       </figure>
     </a>

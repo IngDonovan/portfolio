@@ -38,6 +38,9 @@ header{
           @media (min-width: mn.$layout-breakpoint-small){
             display: flex;
             max-width: 300px;
+            a:hover{
+              color: mn.$primary-color;
+            }
             // cursor: pointer;
           }
         }

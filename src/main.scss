@@ -63,9 +63,7 @@ ul{
 a{
   text-decoration: none;
   color: $primary-text-color;
-  &:hover{
-    color: $primary-color;
-  }
+
 }
 
 @media (prefers-color-scheme: light) {
