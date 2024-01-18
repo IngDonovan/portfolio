@@ -8,8 +8,11 @@ const PortProvider = ({ children }) => {
 
   const toggleMode = () => {
     setIsLightMode(!isLightMode);
-    console.log(isLightMode);
   };
+
+   //menu mobile open/close
+   const [isMenuMbOpen, setIsMenuMbOpen] = useState(false);
+   const toggleMenuMb = () => setIsMenuMbOpen(!isMenuMbOpen);
   
   const listProjects = [
     {
@@ -109,6 +112,9 @@ const PortProvider = ({ children }) => {
       setIsLightMode,
       toggleMode,
       listProjects,
+      isMenuMbOpen,
+      setIsMenuMbOpen,
+      toggleMenuMb,
      }}
     >
         {children}

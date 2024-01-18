@@ -9,6 +9,8 @@ import "./Navbar.scss";
 const Navbar = () => {
     const {
         toggleMode,
+        isMenuMbOpen,
+        toggleMenuMb,
      } = useContext(PortContext) 
 
 
@@ -49,7 +51,7 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className="contain-menu">
-          <li>
+          <li onClick={toggleMenuMb}>
             <IoMenu className="menu" />
           </li>
         </ul>
@@ -67,6 +69,22 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+      </nav>
+      <nav className={isMenuMbOpen ? "menuMobile" : "hidden"} >
+        <ul >
+            <li>About Me</li>
+            <li>Contact</li>
+            <li>
+              <a href="https://www.linkedin.com/in/ingdonovanrm/">
+                <FaLinkedin className="icoSocial"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/IngDonovan">
+                <FaGithub className="icoSocial" />
+              </a>
+            </li>
+          </ul>
       </nav>
     </header>
   );

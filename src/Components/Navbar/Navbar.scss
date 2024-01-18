@@ -45,7 +45,16 @@ header{
           }
         }
     }
+    .menuMobile{
+      display: flex;
+      position: absolute;
+      top: 43px;
+      z-index: 3;
+    }
 
+}
+.hidden{
+  display: none;
 }
 
 .icoSocial{
