@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { PortContext } from "../../Context";
 import { NavLink } from "react-router-dom";
-// import { githubIco } from "/svg/react.svg"
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import "./Navbar.scss";
 
@@ -57,12 +58,12 @@ const Navbar = () => {
           <li>Contact</li>
           <li>
             <a href="https://www.linkedin.com/in/ingdonovanrm/">
-              linkedin
+              <FaLinkedin className="icoSocial"/>
             </a>
           </li>
           <li>
             <a href="https://github.com/IngDonovan">
-              GitHub
+              <FaGithub className="icoSocial" />
             </a>
           </li>
         </ul>

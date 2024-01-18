@@ -4,12 +4,13 @@ header{
     z-index: 2;
     nav{
         width: 100vw;
-        height: 7vh;
+        height: 45px;
         padding: 0px 5vw;
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: mn.$tx-base;
         background: mn.$background2;
         // opacity: 70%;
         box-shadow: mn.$shad-Flat;
@@ -20,6 +21,7 @@ header{
             justify-content: space-between;
             li {
                 cursor: pointer;
+
             }
             li:hover {
                 color: mn.$primary-color;
@@ -41,6 +43,13 @@ header{
         }
     }
 
+}
+
+.icoSocial{
+                    
+  width: 25px;
+  height: 25px;
+  
 }
 
 .menu {
@@ -74,20 +83,20 @@ header{
     transition: transform 500ms;
   }
   
-  .icon--moon {
-    transition-delay: 200ms;
-  }
-  
   .icon--sun {
+    transition-delay: 200ms;
+    
+  }
+  .icon--moon {
     transform: scale(0);
   }
   
-  #switch:checked + .icon--moon {
-    transform: rotate(360deg) scale(0);
-
-  }
-  
   #switch:checked ~ .icon--sun {
+    transform: rotate(360deg) scale(0);
+  }
+
+  #switch:checked + .icon--moon {
     transition-delay: 200ms;
     transform: scale(1) rotate(360deg);
+    
   }
