@@ -113,6 +113,34 @@ const PortProvider = ({ children }) => {
       linkCode:'https://github.com/IngDonovan/ProyBatatabit',
     },
   ];
+  const listPersonal = [
+    {
+      id:1,
+      person:{
+        title: "Personal Information",
+        name:"Donovan",
+        last:"Rojas",
+        nationality:"Colombian",
+        languages:["English","Spanish"],
+      },
+      skills:{
+        title:"My Skills",
+        html:"./svg/Html.svg",
+        js:"./svg/JS.svg",
+        css:"./svg/css.svg",
+        react:"./svg/react.svg",
+        viteJs:"./svg/vite.svg",
+        sass:"./svg/sass.svg",
+        nodejs:"./svg/Nodejs.svg",
+        git:"./svg/Git.svg",
+      },
+      cv:{
+        title:"CV",
+        link:"https://drive.google.com/file/d/1u_CL7FFB2xLS1PITUII9hAVToIf5NPhl/view?usp=sharing",
+      }
+
+    }
+  ];
   
   return (
     <PortContext.Provider
@@ -122,6 +150,7 @@ const PortProvider = ({ children }) => {
       clickLightMode,
       clickDarkMode,
       listProjects,
+      listPersonal,
       isMenuMbOpen,
       setIsMenuMbOpen,
       toggleMenuMb,
