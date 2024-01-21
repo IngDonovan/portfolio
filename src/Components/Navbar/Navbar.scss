@@ -26,6 +26,9 @@ header{
             li:hover {
                 color: mn.$primary-color;
             }
+            a:hover{
+              color: mn.$primary-color;
+            }
         }
         .contain-menu{
           justify-content: end;
@@ -38,9 +41,7 @@ header{
           @media (min-width: mn.$layout-breakpoint-small){
             display: flex;
             max-width: 300px;
-            a:hover{
-              color: mn.$primary-color;
-            }
+            
             // cursor: pointer;
           }
         }
