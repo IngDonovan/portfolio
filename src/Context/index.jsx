@@ -117,6 +117,7 @@ const PortProvider = ({ children }) => {
     {
       id:1,
       person:{
+        summary:"I'm Frontend Developer with a solid foundation in React, Vite.js, Sass, Tailwind, Node.js, and proficiency in using npm and Git. Eager to learn and passionate about creatingefficient and dynamic user interfaces. Dedicated to delivering high-quality, responsive web applications. Actively seeking opportunities to enhance my skills and make valuable contributions to your company.",
         title: "Personal Information",
         name:"Donovan",
         last:"Rojas",

@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import "./AboutCard.scss";
 import { PortContext } from "../../Context";
+import "./AboutCard.scss";
 
 const AboutCard = () => {
     const {
@@ -16,13 +16,13 @@ const AboutCard = () => {
         const languages = firstItem.languages;
 
         return (
-            <article>
+            <article className="aboutPI design">
                 <h3>{title}</h3>
                 <div>
                     <span><p>Name:</p><p>{name}</p></span>
                     <span><p>Last Name:</p><p>{last}</p></span>
                     <span><p>Nationality:</p><p>{nationality}</p></span>
-                    <span><p>Languages:</p><p>{languages}</p></span>
+                    <span><p>Languages:</p><p>{`${languages[0]}, ${languages[1]}`}</p></span>
                 </div>
             </article>
         );
@@ -40,7 +40,7 @@ const AboutCard = () => {
         ));
 
         return (
-            <article>
+            <article className="aboutSkills design">
             <h3>{title}</h3>
             <div>
                 {skillIcons}
@@ -50,18 +50,24 @@ const AboutCard = () => {
     };
     const renderDwnl = () => {
         return (
-            <article>
+            <article className="aboutDwnload design">
                 <h3>CV</h3>
                 <div>
-                    <p>Download:</p>
-                    <button className="button" type="button"></button>
+                    <p>For more information:</p>
+                    <button className="button" type="button">
+                        Download
+                        <span></span>
+                        </button>
                 </div>
             </article>
         );
     };
 
   return (
-      <section>
+      <section className="aboutContainer">
+        <article className="aboutSummary design">
+            <span>{listPersonal[0].person.summary}</span>
+        </article>
         {renderPI()}
         {renderDev()}
         {renderDwnl()}
