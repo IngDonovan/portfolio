@@ -81,8 +81,16 @@ const Navbar = () => {
       </nav>
       <nav className={isMenuMbOpen ? "menuMobile" : "hidden"} >
         <ul >
-            <li>About Me</li>
-            <li>Contact</li>
+            <li>
+              <NavLink to="/about-me" className="linkClass">
+                About Me
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className="linkClass">
+                Contact
+              </NavLink>
+            </li>
             <li>
               <a href="https://www.linkedin.com/in/ingdonovanrm/" target="_blank">
                 <FaLinkedin className="icoSocial"/>

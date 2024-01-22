@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PortContext } from "../../Context";
+import { NavLink } from "react-router-dom";
 import './Intro.scss';
 
 const Intro = () => {
@@ -14,9 +15,11 @@ const Intro = () => {
                 <h1 className="ing">Donovan <span>Rojas</span></h1>
                 <p>Frontend Developer</p>
             </article>
-            <figure>
-                <span></span>
-            </figure>
+            <NavLink to="/" className="linkClass">
+                <figure>
+                        <span className="photo"></span>
+                </figure>
+            </NavLink>
         </section>
     );
 };
