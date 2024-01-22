@@ -12,14 +12,14 @@ const Intro = () => {
         <section className="info">
             <article>
                 <p>I'm</p>
+                <NavLink to="/" className="linkClass">  
                 <h1 className="ing">Donovan <span>Rojas</span></h1>
+                </NavLink>
                 <p>Frontend Developer</p>
             </article>
-            <NavLink to="/" className="linkClass">
                 <figure>
-                        <span className="photo"></span>
+                        <span></span>
                 </figure>
-            </NavLink>
         </section>
     );
 };

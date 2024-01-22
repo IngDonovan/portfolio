@@ -10,7 +10,7 @@ const Contact = () => {
     return (
       <Layout>
         <Intro />
-
+        
         <InfoFooter />
       </Layout>
     );
