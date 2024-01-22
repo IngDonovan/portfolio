@@ -58,12 +58,12 @@ const Navbar = () => {
         </ul>
         <ul className="contain-list-menu">
           <li>
-            <NavLink to="/about-me" className="linkClass">
+            <NavLink to="/portfolio/about-me" className="linkClass">
               About Me
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="linkClass">
+            <NavLink to="/portfolio/contact" className="linkClass">
               Contact
             </NavLink>
           </li>
@@ -82,12 +82,12 @@ const Navbar = () => {
       <nav className={isMenuMbOpen ? "menuMobile" : "hidden"} >
         <ul >
             <li>
-              <NavLink to="/about-me" className="linkClass">
+              <NavLink to="/portfolio/about-me" className="linkClass">
                 About Me
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className="linkClass">
+              <NavLink to="/portfolio/contact" className="linkClass">
                 Contact
               </NavLink>
             </li>
