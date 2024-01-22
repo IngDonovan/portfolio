@@ -10,6 +10,12 @@
     font-weight: 300;
     letter-spacing: 1px;
     color: mn.$primary-text-color;
+    @media (min-width: mn.$layout-breakpoint-small){
+        font-size: mn.$tx-base;
+    }
+    @media (min-width: mn.$layout-breakpoint-large){
+        font-size: mn.$tx-xl;
+    }
 }
 .design{
     display: flex;
@@ -55,5 +61,22 @@
         display: flex;
         flex-direction: column;
         gap: 3vw;
+        button{
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            cursor: pointer;
+        }
+    }
+}
+
+.icoRDsgn{
+    @media (min-width: mn.$layout-breakpoint-medium){
+        width: 35px;
+        height: 35px;
+    }
+    @media (min-width: mn.$layout-breakpoint-large){
+        width: 45px;
+        height: 45px;
     }
 }

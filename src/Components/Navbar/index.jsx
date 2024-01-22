@@ -68,12 +68,12 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ingdonovanrm/">
+            <a href="https://www.linkedin.com/in/ingdonovanrm/" target="_blank">
               <FaLinkedin className="icoSocial"/>
             </a>
           </li>
           <li>
-            <a href="https://github.com/IngDonovan">
+            <a href="https://github.com/IngDonovan" target="_blank">
               <FaGithub className="icoSocial" />
             </a>
           </li>
@@ -84,12 +84,12 @@ const Navbar = () => {
             <li>About Me</li>
             <li>Contact</li>
             <li>
-              <a href="https://www.linkedin.com/in/ingdonovanrm/">
+              <a href="https://www.linkedin.com/in/ingdonovanrm/" target="_blank">
                 <FaLinkedin className="icoSocial"/>
               </a>
             </li>
             <li>
-              <a href="https://github.com/IngDonovan">
+              <a href="https://github.com/IngDonovan" target="_blank">
                 <FaGithub className="icoSocial" />
               </a>
             </li>

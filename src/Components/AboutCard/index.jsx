@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PortContext } from "../../Context";
+import { IoMdDownload } from "react-icons/io";
 import "./AboutCard.scss";
 
 const AboutCard = () => {
@@ -35,7 +36,7 @@ const AboutCard = () => {
         .filter(([key]) => key !== 'title')
         .map(([key, value]) => (
             <figure key={key}>
-                <img className="devIco" src={value} alt={key} />
+                <img className="devIco icoRDsgn" src={value} alt={key} />
             </figure>
         ));
 
@@ -54,10 +55,14 @@ const AboutCard = () => {
                 <h3>CV</h3>
                 <div>
                     <p>For more information:</p>
-                    <button className="button" type="button">
-                        Download
-                        <span></span>
-                        </button>
+                        <a href={listPersonal[0].cv.link} target="_blank">
+                            <button className="button" type="button">
+                                    Download
+                                    <span>
+                                        <IoMdDownload className="icoSocial"/>
+                                    </span>
+                            </button>
+                        </a>
                 </div>
             </article>
         );
