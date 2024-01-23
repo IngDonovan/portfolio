@@ -10,8 +10,9 @@ const PortProvider = ({ children }) => {
   const [theme, setTheme] = useState('dark');
 
   const toggleDarkMode = () => {
+    const isCurrentDark = theme === 'dark';
     setIsDarkMode(!isDarkMode);
-    
+    setTheme(isCurrentDark ? 'light' : 'dark');
     console.log(isDarkMode);
   };
 
