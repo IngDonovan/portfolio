@@ -123,6 +123,8 @@ const PortProvider = ({ children }) => {
         last:"Rojas",
         nationality:"Colombian",
         languages:["English","Spanish"],
+        email:"rojasdrm03@gmail.com",
+        number:"+573138707901"
       },
       skills:{
         title:"My Skills",

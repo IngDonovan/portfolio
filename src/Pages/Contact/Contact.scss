@@ -1,3 +1,4 @@
+@use '../../main.scss' as mn;
 
 .contact-links,.flex-center {
     display: flex;
@@ -9,11 +10,10 @@
     cursor: pointer;
     height: 50px;
     width: 50px;
-    font-family: 'Titillium Web', sans-serif;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    background: white;
+    box-shadow: mn.$shad-Flat;
+    background: mn.$background-color;
     margin: 5px;
     transition: 0.3s;
     justify-content: center;
@@ -28,19 +28,84 @@
   }
 
   .contact-btn:hover {
-    width: 150px;
+    width: 170px;
     border-radius: 5px;
+    filter: drop-shadow(0px 0px 5px rgb(0,140,255)) drop-shadow(0px 0px 25px rgb(0,140,255)) drop-shadow(0px 0px 50px rgb(0,140,255)) drop-shadow(0px 0px 100px rgb(0,140,255));
   }
 
   .contact-btn:hover p {
     padding: 2px;
-    width: 80px;
+    width: 120px;
   }
 
-  #whatsaap  {
+  #whatsapp  {
     color: rgb(97, 255, 97);
+    p{
+      color: mn.$primary-text-color;
+    }
   }
   
-  #gmail  {
-    color: red;
+
+  .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: mn.$background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    // cursor: pointer;
   }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 310px;
+    height: 310px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .card p:not(.heading) {
+    font-size: 14px;
+    color: mn.$primary-text-color;
+  }
+  
+  .card p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+  }
+  
+  .card:hover::after {
+    filter: blur(30px);
+  }
+  
+  .card:hover::before {
+    transform: rotate(-90deg) scaleX(1) scaleY(1);
+  }
+  
