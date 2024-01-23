@@ -71,7 +71,7 @@ const AboutCard = () => {
   return (
       <section className="aboutContainer">
         <article className="aboutSummary design">
-            <span>{listPersonal[0].person.summary}</span>
+            <span>I'm <strong>Frontend Developer</strong> with a solid foundation in <strong>React, Vite.js, Sass, Tailwind, Node.js,</strong> and proficiency in using <strong>npm and Git.</strong> Eager to learn and passionate about creating efficient and dynamic user interfaces. Dedicated to delivering high-quality, responsive web applications. Actively seeking opportunities to enhance my skills and make valuable contributions to your company.</span>
         </article>
         {renderPI()}
         {renderDev()}
