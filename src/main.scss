@@ -25,8 +25,53 @@ $layout-breakpoint-large:1200px;
 $shad-Flat:-15px -15px 30px #30353a40,
 15px 15px 30px 0px #00000040;
 
+$themes: (
+    light: (
+      primary-text-color: black,
+      background-color:#e0e0e0,
+      background2:#e0e0e0b3,
+      backFooter: white,
+    ),
+    dark: (
+      primary-text-color: #ffffff,
+      background-color:#26282B,
+      background2:rgba(38, 40, 43, 0.70),
+      backFooter: black,
+    ),
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+            (
+              $key: $value,
+            )
+          ) !global;
+        }
+        @content;
+        $theme-map: null !global;
+      }
+   }
+}
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+@media (prefers-color-scheme: light) {
+  $primary-text-color: black;
+  $background-color:#e0e0e0;
+  $background2:#e0e0e0b3;
+  $backFooter: white;
+}
 
 :root {
+  
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -48,6 +93,8 @@ html {
   }
 
 body {
+
+
   background: $background-color;
   color: $primary-text-color;
   font-family: $font-stack;
@@ -83,18 +130,7 @@ a{
   color: black;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+
 
 @keyframes fade {
   from {

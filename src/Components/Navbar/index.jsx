@@ -10,8 +10,8 @@ const Navbar = () => {
     const {
         isMenuMbOpen,
         toggleMenuMb,
-        clickLightMode,
-        clickDarkMode,
+        isDarkMode,
+        toggleDarkMode,
      } = useContext(PortContext) 
 
 
@@ -21,8 +21,8 @@ const Navbar = () => {
         <ul>
           <li className="containerToggle" >
             <label className="toggle" htmlFor="switch">
-              <input id="switch" className="input" type="checkbox" />
-              <div className="icon icon--moon" onClick={clickDarkMode} >
+              <input id="switch" className="input" type="checkbox" checked={isDarkMode} onChange={toggleDarkMode}/>
+              <div className="icon icon--moon"  >
                 <svg
                   height="25"
                   width="25"
@@ -37,7 +37,7 @@ const Navbar = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="icon icon--sun" onClick={clickLightMode}>
+              <div className="icon icon--sun" >
                 <svg
                   height="25"
                   width="25"

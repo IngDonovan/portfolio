@@ -1,27 +1,24 @@
 import { createContext, useState, useEffect } from "react";
 
+
 const PortContext = createContext();
 
 const PortProvider = ({ children }) => {
 
-  const [isLightMode, setIsLightMode] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const clickLightMode = () => {
-    setIsLightMode(true);
-    setIsDarkMode(false);
-    console.log("ligh",isLightMode);
-    console.log("Dark",isDarkMode);
-  };
-  const clickDarkMode = () => {
-    setIsDarkMode(true);
-    setIsLightMode(false);
-    console.log("Dark",isDarkMode);
-    console.log("ligh",isLightMode);
+
+  const [theme, setTheme] = useState('dark');
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    
+    console.log(isDarkMode);
   };
 
    //menu mobile open/close
-   const [isMenuMbOpen, setIsMenuMbOpen] = useState(false);
-   const toggleMenuMb = () => setIsMenuMbOpen(!isMenuMbOpen);
+  const [isMenuMbOpen, setIsMenuMbOpen] = useState(false);
+  const toggleMenuMb = () => setIsMenuMbOpen(!isMenuMbOpen);
+  
   
   const listProjects = [
     {
@@ -148,10 +145,10 @@ const PortProvider = ({ children }) => {
   return (
     <PortContext.Provider
      value={{
-      isLightMode,
+      theme,
+      setTheme,
       isDarkMode,
-      clickLightMode,
-      clickDarkMode,
+      toggleDarkMode,
       listProjects,
       listPersonal,
       isMenuMbOpen,

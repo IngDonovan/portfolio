@@ -21,11 +21,14 @@ const AppRoutes = () => {
   }
 
 function AppUI() {
-
+    const {
+        theme,
+        setTheme,
+     } = useContext(PortContext) 
     return(
         <>
             <BrowserRouter>
-                <div className='container'>
+                <div className={`container theme-${theme}`}>
                     <picture className="contentLogo">
                         <img src={reactLogo} className="logo" alt="React logo" />
                     </picture>
