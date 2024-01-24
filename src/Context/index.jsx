@@ -17,7 +17,7 @@ const PortProvider = ({ children }) => {
   };
 
    //menu mobile open/close
-  const [isMenuMbOpen, setIsMenuMbOpen] = useState(false);
+  const [isMenuMbOpen, setIsMenuMbOpen] = useState(true);
   const toggleMenuMb = () => setIsMenuMbOpen(!isMenuMbOpen);
   
   

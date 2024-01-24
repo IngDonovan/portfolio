@@ -1,5 +1,44 @@
 @use '../../main.scss' as mn;
+@import '../../styles.scss';
 
+.contactSection{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  @media (min-width: mn.$layout-breakpoint-medium){
+    gap: 3vw;
+}
+
+  h2{
+    font-size: mn.$tx-xxl;
+  }
+  h3{
+    font-size: mn.$tx-xl;
+    text-align: center;
+  }
+  p{
+    font-size: mn.$tx-base;
+    // align-self: flex-start;
+    @media (min-width: mn.$layout-breakpoint-medium){
+      font-size: mn.$tx-xl;
+  }
+  }
+  article{
+    width: 100%;
+  }
+}
+
+.linkContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  @media (min-width: mn.$layout-breakpoint-small){
+    flex-direction: row;
+}
+}
 .contact-links,.flex-center {
     display: flex;
     justify-content: center;
@@ -7,13 +46,17 @@
   }
 
   .contact-btn {
+    @include themify($themes) {
+      background: themed('colorBackground');
+      color: themed('primaryTextColor');
+    }
     cursor: pointer;
     height: 50px;
     width: 50px;
-    color: #333;
+    // color: #333;
     border-radius: 10px;
     box-shadow: mn.$shad-Flat;
-    background: mn.$background-color;
+    // background: mn.$background-color;
     margin: 5px;
     transition: 0.3s;
     justify-content: center;
@@ -28,46 +71,40 @@
   }
 
   .contact-btn:hover {
-    width: 150px;
+    width: 160px;
     border-radius: 5px;
     // filter: drop-shadow(0px 0px 5px rgb(0,140,255)) drop-shadow(0px 0px 25px rgb(0,140,255)) drop-shadow(0px 0px 50px rgb(0,140,255)) drop-shadow(0px 0px 100px rgb(0,140,255));
   }
 
   .contact-btn:hover p {
     padding: 2px;
-    width: 110px;
+    width: 120px;
   }
 
   #whatsapp  {
-    color: rgb(97, 255, 97);
-    p{
-      color: mn.$primary-text-color;
-    }
+    color: #25d366;
   }
 
   #gmail  {
-    color: red;
-    p{
-      color: mn.$primary-text-color;
-    }
+    color: #eb493b;
   }
   #github  {
-    // color: #1b1f23;
-    color: white;
-    p{
-      color: mn.$primary-text-color;
+    @include themify($themes) {
+      color: themed('github');
     }
   }
   #linkedin  {
     color: #007fbc;
-    p{
-      color: mn.$primary-text-color;
-    }
   }
   #discord  {
     color: #5865f2;
+
+  }
+  #whatsapp, #gmail, #github, #linkedin, #discord{
     p{
-      color: mn.$primary-text-color;
+      @include themify($themes) {
+        color: themed('primaryTextColor');
+      }
     }
   }
   
