@@ -1,6 +1,5 @@
 import Layout from "../../Components/Layout";
 import Intro from "../../Components/Intro";
-import InfoFooter from "../../Components/InfoFooter";
 import { FaWhatsapp } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 
@@ -37,7 +36,6 @@ const Contact = () => {
             </div>
           </article>
         </section>
-        <InfoFooter />
       </Layout>
     );
   };

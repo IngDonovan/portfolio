@@ -1,17 +1,21 @@
 @use '../../main.scss' as mn;
+@import '../../styles.scss';
 
 header{
-    z-index: 2;
+    // z-index: 2;
     nav{
+        @include themify($themes) {
+        background: themed('colorBackground2');
+        color: themed('primaryTextColor');
+        }
         width: 100vw;
         height: 45px;
         padding: 0px 5vw;
-        position: absolute;
+        // position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: mn.$tx-base;
-        background: mn.$background2;
         // opacity: 70%;
         box-shadow: mn.$shad-Flat;
         ul{
@@ -24,6 +28,10 @@ header{
 
             }
             li:hover {
+              @include themify($themes) {
+
+                color: themed('primary-text-color');
+                }
                 color: mn.$primary-color;
             }
             a:hover{
@@ -48,7 +56,7 @@ header{
     }
     .menuMobile{
       display: flex;
-      position: absolute;
+      // position: absolute;
       top: 45px;
       z-index: 3;
       li {

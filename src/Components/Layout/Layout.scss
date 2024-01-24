@@ -1,17 +1,22 @@
 @use '../../main.scss' as mn;
+@import '../../styles.scss';
 
 .layout {
     width: 100vw;
-    position: absolute;
+    // position: absolute;
+    // margin-top: 7vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 7vh;
     // padding: 0 5vw;
     gap: 5vh;
-    color: mn.$primary-color;
-    z-index: 2;
+    z-index: 0;
+    @include themify($themes) {
+        background: themed('colorBackground');
+        color: themed('primaryTextColor');
+        }
+    // color: mn.$primary-color;
     @media (min-width: mn.$layout-breakpoint-small){
         animation-duration: 4s;
         animation-name: fade;

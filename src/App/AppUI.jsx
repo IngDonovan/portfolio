@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { BrowserRouter, useRoutes, Navigate } from 'react-router-dom';
 import { PortContext } from "../Context";
 import Navbar from "../Components/Navbar";
+import InfoFooter from "../Components/InfoFooter";
 import Home from '../Pages/Home';
 import NotFound from '../Pages/NotFound';
 import AboutMe from '../Pages/AboutMe';
@@ -28,13 +29,15 @@ function AppUI() {
     return(
         <>
             <BrowserRouter>
-                <div className={`container theme-${theme}`}>
-                    <picture className="contentLogo">
+                {/* <div className={`container theme-${theme}`}> */}
+                <div className={`theme-${theme}`}>
+                    {/* <picture className="contentLogo">
                         <img src={reactLogo} className="logo" alt="React logo" />
-                    </picture>
+                    </picture> */}
 
                     <Navbar />
                     <AppRoutes />
+                    <InfoFooter />
                 </div>
             </BrowserRouter>
         </>
