@@ -12,7 +12,7 @@ const Intro = () => {
         <section className="info">
             <article>
                 <p>I'm</p>
-                <NavLink to="/portfolio" className="linkClass">  
+                <NavLink to="/" className="linkClass">  
                 <h1 className="ing">Donovan <span>Rojas</span></h1>
                 </NavLink>
                 <p>Frontend Developer</p>
