@@ -27,13 +27,16 @@
   }
   }
   article{
-    width: 100%;
+    width: 290px;
   }
 }
 
 .linkContainer{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 5vw;
   @media (min-width: mn.$layout-breakpoint-small){
     flex-direction: row;
