@@ -13,7 +13,7 @@ const PortProvider = ({ children }) => {
     const isCurrentDark = theme === 'dark';
     setIsDarkMode(!isDarkMode);
     setTheme(isCurrentDark ? 'light' : 'dark');
-    console.log(isDarkMode);
+    // console.log(isDarkMode);
   };
 
    //menu mobile open/close

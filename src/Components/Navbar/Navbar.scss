@@ -5,7 +5,7 @@ header{
     // z-index: 2;
     nav{
         @include themify($themes) {
-        background: themed('colorBackground2');
+        background: themed('colorBackground');
         color: themed('primaryTextColor');
         }
         width: 100vw;
@@ -17,7 +17,7 @@ header{
         justify-content: center;
         font-size: mn.$tx-base;
         // opacity: 70%;
-        box-shadow: mn.$shad-Flat;
+        // box-shadow: mn.$shad-Flat;
         ul{
             width: 100%;
             display: flex;
@@ -32,7 +32,7 @@ header{
 
                 color: themed('primary-text-color');
                 }
-                color: mn.$primary-color;
+
             }
             a:hover{
               color: mn.$primary-color;
@@ -57,8 +57,8 @@ header{
     .menuMobile{
       display: flex;
       // position: absolute;
-      top: 45px;
-      z-index: 3;
+      // top: 45px;
+      // z-index: 3;
       li {
         cursor: pointer;
 
@@ -71,10 +71,8 @@ header{
 }
 
 .icoSocial{
-                    
   width: 25px;
   height: 25px;
-  
 }
 
 .menu {
@@ -83,15 +81,18 @@ header{
 }
 
 .toggle {
-    color: mn.$primary-text-color;
-    background-color: mn.$background-color;
+    @include themify($themes) {
+      color: themed('primaryTextColor');
+    }
+    // color: mn.$primary-text-color;
+    background-color: transparent;
     width: 33px;
     height: 33px;
     border-radius: 50%;
     display: grid;
     place-items: center;
     cursor: pointer;
-    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+    // box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
     line-height: 1;
     &:hover {
       color: mn.$primary-color;

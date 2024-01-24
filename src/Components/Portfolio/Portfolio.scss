@@ -1,6 +1,11 @@
 @use '../../main.scss' as mn;
+@import '../../styles.scss';
     
 .proyContainer{
+    @include themify($themes) {
+      background: themed('colorBackground');
+      color: themed('primaryTextColor');
+      }
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -14,23 +19,27 @@
         padding: 5vw 0 5vw 5vw;
         align-self: start;
         font-size: mn.$tx-xxl;
-        color: mn.$primary-text-color;
+        // color: mn.$primary-text-color;
+        @media (min-width: mn.$layout-breakpoint-small){
+          padding: 2vw 0px 0px 5vw;
+        }
         @media (min-width: mn.$layout-breakpoint-medium){
           align-self: center;
-          padding: 2vw 0px;
+          padding: 2vw 0px 0px 0px;
       }
     }
     
     aside {
         width: 90%;
         margin-bottom: 5vw;
-        padding-bottom: 2vw;
+        padding: 3vw 0px 2vw 0px;
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 7vw;
         
         @media (min-width: mn.$layout-breakpoint-small){
+          padding: 6vw 3vw 6vw 3vw;
           flex-direction: row;
           overflow-x: auto;
           overscroll-behavior-x: contain;

@@ -36,7 +36,7 @@ const AboutCard = () => {
         .filter(([key]) => key !== 'title')
         .map(([key, value]) => (
             <figure key={key}>
-                <img className="devIco icoRDsgn" src={value} alt={key} />
+                <img className="icoRDsgn" src={value} alt={key} />
             </figure>
         ));
 
